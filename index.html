@@ -46,23 +46,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top" onClick="_gaq.push(['NavBar', 'Clicks', 'Name Link']);">Tadas Jodwalis</a>
+                <a class="navbar-brand page-scroll" href="#page-top" onClick="_gaq.push(['_trackEvent', 'Clicks', 'Name Link']);">Tadas Jodwalis</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#skills" onClick="_gaq.push(['NavBar', 'Clicks', 'Skills Link']);">Skills</a>
+                        <a class="page-scroll" href="#skills" onClick="_gaq.push(['_trackEvent', 'Clicks', 'Skills Link']);">Skills</a>
                     </li>
                     <!--li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li-->
                     <li>
-                        <a class="page-scroll" href="#blog" onClick="_gaq.push(['NavBar', 'Clicks', 'Blog Link']);">Blog</a>
+                        <a class="page-scroll" href="#blog" onClick="_gaq.push(['_trackEvent', 'Clicks', 'Blog Link']);">Blog</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact" onClick="_gaq.push(['NavBar', 'Clicks', 'Contact Link']);">Contact</a>
+                        <a class="page-scroll" href="#contact" onClick="_gaq.push(['_trackEvent', 'Clicks', 'Contact Link']);">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -74,8 +74,8 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <a href="https://github.com/tadahh" onClick="_gaq.push(['Github', 'Clicks', 'Github Link']);" target="_blank"><span class="fa fa-github-alt"></span></a>
-                <a href="https://www.linkedin.com/pub/tadas-jodwalis/7a/82/18" onClick="_gaq.push(['Linkedin', 'Clicks', 'Github Link']);" target="_blank"><span class="fa fa-linkedin"></span></a>
+                <a href="https://github.com/tadahh" onClick="_gaq.push(['_trackEvent', 'Clicks', 'Github Link']);" target="_blank"><span class="fa fa-github-alt"></span></a>
+                <a href="https://www.linkedin.com/pub/tadas-jodwalis/7a/82/18" onClick="_gaq.push(['_trackEvent', 'Clicks', 'LinkedIn Link']);" target="_blank"><span class="fa fa-linkedin"></span></a>
                 <!--a href="https://www.linkedin.com/" class="fa fa-linkedin"></span-->
                 <!--h1>I Dev Stuff.</br><p>Check it out!</p></h1-->
                 <!--hr-->
@@ -138,14 +138,14 @@
                     </div>
                 </div>
             </div>
-        </div-->
+        </div>
     </section>
 
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" onClick="_gaq.push(['Projects', 'Clicks', 'Cars.com Link']);">
+                    <a class="portfolio-box" onClick="_gaq.push(['_trackEvent', 'Clicks', 'Cars.com Link']);">
                         <img src="img/portfolio/cars.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -160,7 +160,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" onClick="_gaq.push(['Projects', 'Clicks', 'UIC MBA 590 Link']);">
+                    <a class="portfolio-box" onClick="_gaq.push(['_trackEvent', 'Clicks', 'UIC MBA 590 Link']);">
                         <img src="img/portfolio/uic.png" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -175,7 +175,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" onClick="_gaq.push(['Projects', 'Clicks', 'Herbfront Link']);">
+                    <a class="portfolio-box" onClick="_gaq.push(['_trackEvent', 'Clicks', 'Herbfront Link']);">
                         <img src="img/portfolio/herbfront.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -260,11 +260,11 @@
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-file-pdf-o fa-3x wow bounceIn"></i>
-                    <p><a href="http://tadahh.ninja/resume/TadasJodwalis_Resume.pdf" target="_blank" onClick="_gaq.push(['Resume', 'Download', 'Resume Download']);">Resume</a></p>
+                    <p><a href="http://tadahh.ninja/resume/TadasJodwalis_Resume.pdf" target="_blank" onclick="_gaq.push(['_trackEvent', 'Clicks', 'Resume Download']);">Resume</a></p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:tjodwalis@gmail.com" onClick="_gaq.push(['Email', 'Contact', 'Email Link']);">tjodwalis@gmail.com</a></p>
+                    <p><a href="mailto:tjodwalis@gmail.com" onClick="_gaq.push(['_trackEvent', 'Clicks', 'Contact Via Email']);">tjodwalis@gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -296,7 +296,7 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    
+
 </body>
 
 </html>
